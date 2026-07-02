@@ -1,6 +1,6 @@
 <?php
 session_start(); // Start the session
-require_once('conn.php');
+require_once('config/conn.php');
 if($_SERVER['REQUEST_METHOD']=="POST"){
     $username = $_POST['username'];
     $password = $_POST['password'];

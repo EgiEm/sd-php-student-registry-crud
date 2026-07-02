@@ -1,5 +1,5 @@
 <?php
-    require_once "conn.php";
+    require_once "config/conn.php";
     $id = $_GET["id"];
     $query = "DELETE FROM results WHERE id = '$id'";
     if (mysqli_query($conn, $query)) {

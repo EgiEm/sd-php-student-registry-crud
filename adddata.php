@@ -1,5 +1,5 @@
 <?php
-    require_once "conn.php";
+    require_once "config/conn.php";
     if(isset($_POST['submit'])){
 
         $name = $_POST['name'];

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    require_once "conn.php";
+    require_once "config/conn.php";
     if(isset($_POST["name"]) && isset($_POST["grade"]) && isset($_POST["marks"])){
         $name = $_POST['name'];
         $grade = $_POST['grade'];
@@ -33,7 +33,7 @@
         <h1 style="text-align: center;margin: 50px 0;">Update Data</h1>
         <div class="container">
             <?php 
-                require_once "conn.php";
+                require_once "config/conn.php";
                 $sql_query = "SELECT * FROM results WHERE id = ".$_GET["id"];
                 if ($result = $conn ->query($sql_query)) {
                     while ($row = $result -> fetch_assoc()) { 

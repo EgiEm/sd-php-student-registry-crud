@@ -1,5 +1,5 @@
 <?php
-    require_once "conn.php";
+    require_once "config/conn.php";
     $email=$_POST['email'];
     $username=$_POST['username'];
     $password=$_POST['password'];
